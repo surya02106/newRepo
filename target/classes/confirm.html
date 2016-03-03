@@ -1,0 +1,16 @@
+<script src='javascript/jquery-2.1.4.js'></script>
+<script>
+	var url=window.location.href;
+	var getUrl= new Array();
+	getUrl[0]=url.substring(0,url.lastIndexOf("/"));
+	url=url.substring(url.indexOf("=")+1);
+	getUrl[1]=url;
+	$.ajax({
+			type : "POST",
+			url : "emailConfirm",
+			data : JSON.stringify(getUrl),
+			contentType : 'application/json'
+	}).done(function(msg) {
+		window.location=msg[0];
+	});
+</script>
