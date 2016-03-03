@@ -1,0 +1,76 @@
+<link type="text/css" rel="stylesheet" href="css/home.css" />
+<script src='javascript/home.js'></script>
+<img src='images/bg.jpg' class='bgImg' />
+<table class='home-basetable'>
+	<tr>
+		<td colspan='3' class='header-home'>
+			<div id='allInputIds'>
+				
+			</div>
+			<div class='profile-div'>
+				<span id='glyphicon glyphicon-user'>&nbsp;<span id='requestForFriendSpan'></span></span>&nbsp;
+				<span class='editProfile'> SANTOSH SURYAWAMSHI</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<span class='logout'><span class='glyphicon glyphicon-off'></span>LOGOUT</span>
+			</div>
+			<div class='input-group home-input-group'>			
+				<input type='text' class='form-control' id='searchFriend' placeholder='SEARCH FOR FRIEND'/>
+				<span class="input-group-addon">
+					<span class='glyphicon glyphicon-search'></span>
+				</span><br>
+				<div id='searchList'></div>
+			</div>
+		</td>
+	</tr>
+	<tr>
+		<td class='left-home'>
+		
+		</td>
+		<td class='home-body'>
+			<div class='body-div'>
+			
+			</div>
+		</td>
+		<td class='right-home'>
+			<div id='userChatList'>
+				
+			</div>
+		</td>
+	</tr>
+	<tr>
+		<td colspan='3' class='home-footer'>
+			<ul class='chatBoxes'></ul>
+		</td>
+	</tr>
+</table>
+
+
+<div id='boxForChat' style='display: none;'>
+	<table class='chatBox'>
+		<tr>
+			<td class='nameTab'>
+				<table style='width: 100%'>
+					<tr>
+						<td class='nameTabIn'></td>
+						<td class='closeCls'>X</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td><div class='textTab'></div></td>
+		</tr>
+		<tr>
+			<td class='typeTab'>
+				<table>
+					<tr>
+						<td><textarea class='TtypeTab'></textarea></td>
+						<td><input type='button' class='send' /></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+</div>
+
+
+<!-- <input type='button' id='sendMail' value='Send'/> -->
